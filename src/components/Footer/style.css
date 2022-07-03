@@ -1,0 +1,42 @@
+ .footerContainer{
+    color: rgba(255,255,255, 0.5);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.footerName{
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.footerSocials{
+    color: rgba(255,255,255, 0.5);
+    width: 84px;
+}
+
+.footerSocialsIcon{
+    color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.github:hover{
+    color: rgb(90, 90, 90);
+    transition: all 0.5s ease;
+    transform: scale(0.9);  
+}
+
+.linkedin:hover{
+    color: #0e76a8;
+    transition: all 0.5s ease;
+    transform: scale(0.9);
+}
+
+.portfolio:hover{
+    color: #C13584;
+    transition: all 0.5s ease;
+    transform: scale(0.9);
+}
