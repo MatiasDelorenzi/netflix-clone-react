@@ -1,0 +1,58 @@
+.movieDescription{
+    display: flex;
+    margin-left: 15%;
+}
+
+.moviePoster{
+    object-fit: contain;
+    max-height: 400px;
+    border: 5px solid white;
+}
+
+.movieDescriptionRight{
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+
+.movieDescriptionHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.closeIcon{
+    cursor: pointer;
+    margin-right: 4rem;
+    margin-left: 1rem;
+    transform: scale(2);
+    margin-top: 2rem;
+}
+
+.movieTitle{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.movieData{
+    display: flex;
+}
+
+.movieReleaseYear{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(172, 172, 172);
+}
+
+.movieRating{
+    margin-right: 20px;
+    font-size: 1rem;
+    color: #46d369;
+    font-weight: 500;
+}
+
+.movieSynopsis{
+    margin-top: 30px;
+    font-size: 1.7rem;
+    font-weight: 300;
+}

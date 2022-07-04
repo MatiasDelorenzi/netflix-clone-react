@@ -1,14 +1,12 @@
 import "./style.css";
 import React, { useState, useEffect } from "react";
 import axios from "../../api/axios";
-import movieTrailer from "movie-trailer";
-import YouTube from "react-youtube";
-
+import MovieDescription from "../MovieDescription/MovieDescription";
 const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
-  const [trailerUrl, setTrailerUrl] = useState("");
+  const [movieDescription, setMovieDescription] = useState("");
 
   useEffect(() => {
     async function fetchData() {
@@ -20,27 +18,11 @@ function Row({ title, fetchUrl, isLargeRow }) {
   }, [fetchUrl]);
 
   const handleClick = (movie) => {
-    if (trailerUrl) {
-      setTrailerUrl("");
-    } else {
-      movieTrailer(movie?.name || "")
-        .then((url) => {
-          const urlParams = new URL(url).search;
-          const urlSearchParams = new URLSearchParams(urlParams);
-          setTrailerUrl(urlSearchParams.get("v"));
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    }
+    setMovieDescription(movie);
   };
 
-  const youtubeOptions = {
-    height: "390",
-    width: "100%",
-    playerVars: {
-      autoplay: 1,
-    },
+  const closeDescription = () => {
+    setMovieDescription("");
   };
 
   return (
@@ -61,7 +43,12 @@ function Row({ title, fetchUrl, isLargeRow }) {
           );
         })}
       </div>
-      {trailerUrl && <YouTube videoId={trailerUrl} opts={youtubeOptions} />}
+      {movieDescription && (
+        <MovieDescription
+          movie={movieDescription}
+          closeCallback={closeDescription}
+        />
+      )}
     </div>
   );
 }
