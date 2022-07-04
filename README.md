@@ -8,7 +8,11 @@ Live demo available [here](https://netflix-clone-fb9cf.web.app/)
 
 ![lading](https://i.postimg.cc/d005Hzvq/netflix-clone-screenshot.png)
 
+---
+
 ![movie_click](https://i.postimg.cc/nhBhCcPW/netflix-clone-screenshot.png)
+
+---
 
 ## Technologies used
 
