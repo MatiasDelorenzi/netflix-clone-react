@@ -1,3 +1,5 @@
+This project was created only for learning purposes. All the information realated to logos, series and TV shows belongs to it´s creators.
+
 # Netflix clone
 
 Live demo available [here](https://netflix-clone-fb9cf.web.app/)
@@ -5,6 +7,8 @@ Live demo available [here](https://netflix-clone-fb9cf.web.app/)
 ## Screenshots
 
 ![lading](https://i.postimg.cc/d005Hzvq/netflix-clone-screenshot.png)
+
+![movie_click](https://i.postimg.cc/nhBhCcPW/netflix-clone-screenshot.png)
 
 ## Technologies used
 
